@@ -158,6 +158,7 @@
 		0BDDE1EFA621D4F4A388068B89FBEAC7 /* Pods-chat-appUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-chat-appUITests.modulemap"; sourceTree = "<group>"; };
 		0C570A7310823FB30F204E69A7824B12 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
 		0CB7457D21ED8B4E03AF89DC6383D1B3 /* GULAppEnvironmentUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULAppEnvironmentUtil.h; path = GoogleUtilities/Environment/third_party/GULAppEnvironmentUtil.h; sourceTree = "<group>"; };
+		0ECF761734F17E300CD0C610411D0F11 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Frameworks/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
 		1034C6CADA95AF421C3230C18FA93AE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		115E3FD3663CF5F9A0FCE8FA9ABB682B /* GULNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULNetwork.h; path = GoogleUtilities/Network/Private/GULNetwork.h; sourceTree = "<group>"; };
 		16EE8133A69B56ABB8053B638AC4FCF1 /* FIROptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIROptions.m; path = Firebase/Core/FIROptions.m; sourceTree = "<group>"; };
@@ -167,7 +168,6 @@
 		1D9959E69B2670A325F8E16D5C74D943 /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
 		1EB66D272670FF94BAF7579A0418D04D /* GULAppDelegateSwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULAppDelegateSwizzler.m; path = GoogleUtilities/AppDelegateSwizzler/GULAppDelegateSwizzler.m; sourceTree = "<group>"; };
 		240F74EA2A575C48D0192D5788B65B6E /* GULMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULMutableDictionary.m; path = GoogleUtilities/Network/GULMutableDictionary.m; sourceTree = "<group>"; };
-		251051FFE6E10EC199C3A0AE1B9CF9F9 /* MeasurementNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MeasurementNanoPB.framework; path = Frameworks/MeasurementNanoPB.framework; sourceTree = "<group>"; };
 		2780D85FF46D812A55C8695C61E901C2 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		2A0864DB8649CAB528D943C7F3555CDE /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
 		2C63E480116B0430734C1AAEE08B3C7D /* FIRCoreConfigurable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCoreConfigurable.h; path = Firebase/Core/Private/FIRCoreConfigurable.h; sourceTree = "<group>"; };
@@ -187,7 +187,6 @@
 		51E17F5EB748CF905C66F99263D9DE8C /* GULReachabilityChecker+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GULReachabilityChecker+Internal.h"; path = "GoogleUtilities/Reachability/GULReachabilityChecker+Internal.h"; sourceTree = "<group>"; };
 		545D9A49F15913684E5C5A0332C0DDD1 /* GULSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULSwizzler.h; path = GoogleUtilities/MethodSwizzler/Private/GULSwizzler.h; sourceTree = "<group>"; };
 		5AE26F984D4A44586C0D1E3B928F8A4F /* Pods-chat-appUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-chat-appUITests-umbrella.h"; sourceTree = "<group>"; };
-		6196A2D62F2EA0AE8EB0C88648602D08 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = Frameworks/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
 		6297AEF629193B6BE2A604A92577B540 /* FirebaseCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseCore-dummy.m"; sourceTree = "<group>"; };
 		651CA3B614DD9F54CB8852119BB5059E /* GULNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GULNSData+zlib.m"; path = "GoogleUtilities/NSData+zlib/GULNSData+zlib.m"; sourceTree = "<group>"; };
 		671B4C000D4B4F5D4F6D21A881465678 /* Pods-chat-appUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-chat-appUITests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -382,7 +381,7 @@
 				76AF5F7312179F229766C003842F060A /* FirebaseAnalytics */,
 				DB5D40735F0C45B71FADDFA8CC4E6D36 /* FirebaseCore */,
 				8D1663D2EBA905D7E957A4C2A9A25372 /* FirebaseInstanceID */,
-				9225DEDAFB67C78470E0E43E3E7CA8EB /* GoogleAppMeasurement */,
+				6CED46F07A241D5786FAD697AC06FC59 /* GoogleAppMeasurement */,
 				17003CCC314AC3A640A86FB3A0C65A81 /* GoogleUtilities */,
 				6C5608652A9F24F315C8450826FD3215 /* nanopb */,
 			);
@@ -462,13 +461,13 @@
 			path = nanopb;
 			sourceTree = "<group>";
 		};
-		704ABD90F49820F1B6FF29792AEBB59D /* Frameworks */ = {
+		6CED46F07A241D5786FAD697AC06FC59 /* GoogleAppMeasurement */ = {
 			isa = PBXGroup;
 			children = (
-				6196A2D62F2EA0AE8EB0C88648602D08 /* GoogleAppMeasurement.framework */,
-				251051FFE6E10EC199C3A0AE1B9CF9F9 /* MeasurementNanoPB.framework */,
+				9DE876FA056A112459C92C3F2571811E /* Frameworks */,
 			);
-			name = Frameworks;
+			name = GoogleAppMeasurement;
+			path = GoogleAppMeasurement;
 			sourceTree = "<group>";
 		};
 		713FE86326CE18B02E70E93A4E3B89F6 /* CoreOnly */ = {
@@ -567,13 +566,12 @@
 			path = "Target Support Files/Pods-chat-app";
 			sourceTree = "<group>";
 		};
-		9225DEDAFB67C78470E0E43E3E7CA8EB /* GoogleAppMeasurement */ = {
+		9DE876FA056A112459C92C3F2571811E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				704ABD90F49820F1B6FF29792AEBB59D /* Frameworks */,
+				0ECF761734F17E300CD0C610411D0F11 /* GoogleAppMeasurement.framework */,
 			);
-			name = GoogleAppMeasurement;
-			path = GoogleAppMeasurement;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A2A015F0698F55B3338A600121ABB718 /* Products */ = {

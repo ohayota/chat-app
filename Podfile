@@ -6,7 +6,7 @@ target 'chat-app' do
   use_frameworks!
 
   # Pods for chat-app
-  pod 'Firebase'
+  pod 'Firebase/Core'
 
   target 'chat-appTests' do
     inherit! :search_paths
