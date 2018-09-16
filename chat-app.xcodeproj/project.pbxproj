@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		34484FC51C7DDAFA9EF70A8C /* Pods_chat_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C687FE9E37E3A9E4AFEA1DE /* Pods_chat_appTests.framework */; };
+		9503D947214E6B4500D07E9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9503D946214E6B4500D07E9A /* GoogleService-Info.plist */; };
 		952899412143A59F009EA8B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952899402143A59F009EA8B9 /* AppDelegate.swift */; };
 		952899432143A59F009EA8B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952899422143A59F009EA8B9 /* ViewController.swift */; };
 		952899462143A59F009EA8B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952899442143A59F009EA8B9 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		4445C3C37E1A347E5221E67B /* Pods-chat-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat-appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chat-appTests/Pods-chat-appTests.debug.xcconfig"; sourceTree = "<group>"; };
 		700D4CB5606C7A1F94FB863E /* Pods-chat-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat-appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chat-appUITests/Pods-chat-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C687FE9E37E3A9E4AFEA1DE /* Pods_chat_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chat_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9503D946214E6B4500D07E9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9528993D2143A59F009EA8B9 /* chat-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chat-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		952899402143A59F009EA8B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		952899422143A59F009EA8B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				952899472143A5A2009EA8B9 /* Assets.xcassets */,
 				952899492143A5A2009EA8B9 /* LaunchScreen.storyboard */,
 				9528994C2143A5A2009EA8B9 /* Info.plist */,
+				9503D946214E6B4500D07E9A /* GoogleService-Info.plist */,
 			);
 			path = "chat-app";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9528994B2143A5A2009EA8B9 /* LaunchScreen.storyboard in Resources */,
+				9503D947214E6B4500D07E9A /* GoogleService-Info.plist in Resources */,
 				952899482143A5A2009EA8B9 /* Assets.xcassets in Resources */,
 				952899462143A59F009EA8B9 /* Main.storyboard in Resources */,
 			);
@@ -555,7 +559,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZ443JX5KX;
 				INFOPLIST_FILE = "chat-app/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "atoy.ryujin.93621339.chat-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -571,7 +578,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZ443JX5KX;
 				INFOPLIST_FILE = "chat-app/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "atoy.ryujin.93621339.chat-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -588,7 +598,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZ443JX5KX;
 				INFOPLIST_FILE = "chat-appTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "atoy.ryujin.93621339.chat-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -606,7 +620,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZ443JX5KX;
 				INFOPLIST_FILE = "chat-appTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "atoy.ryujin.93621339.chat-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -623,7 +641,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZ443JX5KX;
 				INFOPLIST_FILE = "chat-appUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "atoy.ryujin.93621339.chat-appUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -640,7 +662,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZ443JX5KX;
 				INFOPLIST_FILE = "chat-appUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "atoy.ryujin.93621339.chat-appUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
