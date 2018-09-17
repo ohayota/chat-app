@@ -7,6 +7,8 @@ target 'chat-app' do
 
   # Pods for chat-app
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'JSQMessagesViewController'
 
   target 'chat-appTests' do
     inherit! :search_paths
