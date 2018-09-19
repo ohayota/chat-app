@@ -44,6 +44,8 @@ class ChatViewController: JSQMessagesViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = senderDisplayName
+        
         // クリーンアップツールバーの設定
         inputToolbar!.contentView!.leftBarButtonItem = nil
         // 新しいメッセージを受信するたび下にスクロールする
@@ -51,7 +53,7 @@ class ChatViewController: JSQMessagesViewController {
         
         // 自分のsenderID, senderDisplayNameを設定
         self.senderId = "HIRYUGA"  // デバイスによって変更する
-        self.senderDisplayName = "test"
+//        self.senderDisplayName = "test"
         
         // 吹き出しの設定
         let bubbleFactory = JSQMessagesBubbleImageFactory()
@@ -76,9 +78,6 @@ class ChatViewController: JSQMessagesViewController {
         let post1Ref = databaseRef.childByAutoId()
         post1Ref.setValue(post1)
         self.finishSendingMessage(animated: true)
-        
-        // キーボードを閉じる
-        self.view.endEditing(true)
     }
     
     // アイテムごとに参照するメッセージデータを返す
