@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import JSQMessagesViewController
 
-class ViewController: JSQMessagesViewController {
+class ChatViewController: JSQMessagesViewController {
     var databaseRef: DatabaseReference!
     
     // メッセージ内容に関するプロパティ
@@ -50,7 +50,7 @@ class ViewController: JSQMessagesViewController {
         automaticallyScrollsToMostRecentMessage = true
         
         // 自分のsenderID, senderDisplayNameを設定
-        self.senderId = "user1"
+        self.senderId = "HIRYUGA"  // デバイスによって変更する
         self.senderDisplayName = "test"
         
         // 吹き出しの設定
