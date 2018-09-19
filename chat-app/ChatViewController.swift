@@ -30,12 +30,15 @@ class ChatViewController: JSQMessagesViewController {
         // 最新のデータが追加されるたびに最新データを取得する
         databaseRef.queryLimited(toLast: 25).observe(DataEventType.childAdded, with: { (snapshot) -> Void in
             let snapshotValue = snapshot.value as! NSDictionary
-            let text = snapshotValue["text"] as! String
             let sender = snapshotValue["from"] as! String
             let name = snapshotValue["name"] as! String
+            let text = snapshotValue["text"] as! String
             print(snapshot.value!)
-            let message = JSQMessage(senderId: sender, displayName: name, text: text)
-            self.messages?.append(message!)
+            
+            if name == self.senderDisplayName {
+                let message = JSQMessage(senderId: sender, displayName: name, text: text)
+                self.messages?.append(message!)
+            }
             self.finishSendingMessage()
         })
         
