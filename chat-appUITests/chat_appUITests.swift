@@ -8,7 +8,7 @@
 
 import XCTest
 
-class chat_appUITests: XCTestCase {
+class ChatAppUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

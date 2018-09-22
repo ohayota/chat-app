@@ -9,6 +9,8 @@ target 'chat-app' do
   pod 'Firebase/Core'
   pod 'Firebase/Database'
   pod 'JSQMessagesViewController'
+  pod 'SwiftLint'
+  pod 'RealmSwift'
 
   target 'chat-appTests' do
     inherit! :search_paths

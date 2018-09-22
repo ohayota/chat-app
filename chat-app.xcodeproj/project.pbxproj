@@ -17,6 +17,7 @@
 		952899562143A5A2009EA8B9 /* chat_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952899552143A5A2009EA8B9 /* chat_appTests.swift */; };
 		952899612143A5A2009EA8B9 /* chat_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952899602143A5A2009EA8B9 /* chat_appUITests.swift */; };
 		9569BF0D21527CA3004348EF /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569BF0C21527CA3004348EF /* RoomListViewController.swift */; };
+		9594C8022156809B0095B519 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9594C8012156809B0095B519 /* UIImage.swift */; };
 		A41C68865CE1B787F180637A /* Pods_chat_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A987F88E7BD792BEC7BEF /* Pods_chat_app.framework */; };
 		CC88677DD4323E23F0187AD0 /* Pods_chat_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B10E363E2B1789AEF3A8F0 /* Pods_chat_appUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		952899602143A5A2009EA8B9 /* chat_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat_appUITests.swift; sourceTree = "<group>"; };
 		952899622143A5A2009EA8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9569BF0C21527CA3004348EF /* RoomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewController.swift; sourceTree = "<group>"; };
+		9594C8012156809B0095B519 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		B373EBB2A515382230BD6443 /* Pods-chat-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chat-app/Pods-chat-app.debug.xcconfig"; sourceTree = "<group>"; };
 		D1A7071C5A0481DB59A9175C /* Pods-chat-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chat-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-chat-appTests/Pods-chat-appTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2B10E363E2B1789AEF3A8F0 /* Pods_chat_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chat_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				952899402143A59F009EA8B9 /* AppDelegate.swift */,
+				9594C8012156809B0095B519 /* UIImage.swift */,
 				952899422143A59F009EA8B9 /* ChatViewController.swift */,
 				9569BF0C21527CA3004348EF /* RoomListViewController.swift */,
 				952899442143A59F009EA8B9 /* Main.storyboard */,
@@ -183,6 +186,7 @@
 				9528993A2143A59F009EA8B9 /* Frameworks */,
 				9528993B2143A59F009EA8B9 /* Resources */,
 				0B735CAEC645A083D47F66C0 /* [CP] Embed Pods Frameworks */,
+				95E4FAB52156703F00F0B11C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -313,6 +317,8 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -321,6 +327,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -383,6 +391,19 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		95E4FAB52156703F00F0B11C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -391,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9569BF0D21527CA3004348EF /* RoomListViewController.swift in Sources */,
+				9594C8022156809B0095B519 /* UIImage.swift in Sources */,
 				952899432143A59F009EA8B9 /* ChatViewController.swift in Sources */,
 				952899412143A59F009EA8B9 /* AppDelegate.swift in Sources */,
 			);

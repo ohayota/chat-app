@@ -9,7 +9,7 @@
 import XCTest
 @testable import chat_app
 
-class chat_appTests: XCTestCase {
+class ChatAppTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
