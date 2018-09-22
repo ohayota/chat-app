@@ -4,6 +4,7 @@ disabled_rules:
 - trailing_whitespace
 # force_cast は場合によっては使用するため
 - force_cast
+- force_try
 
 # デフォルト無効のルールのうち、有効にするもの。
 opt_in_rules:

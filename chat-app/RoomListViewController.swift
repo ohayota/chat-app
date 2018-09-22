@@ -11,15 +11,14 @@ import UIKit
 class RoomListViewController: UIViewController {
     var tableView: UITableView?
     var roomList: [[String]] = [
-        ["MIRAI BASE"],
-        ["未来大4Fスタジオ"]
+        ["MIRAI BASE", "test"],
+        ["未来大4F"]
     ]
     let roomStatus: [String] = ["参加中のルーム", "圏外のルーム"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "ルーム"
-        
         // テーブルのインスタンス
         tableView = UITableView()
         
