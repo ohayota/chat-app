@@ -60,12 +60,11 @@ class ChatViewController: JSQMessagesViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationItem.title = senderDisplayName
         // 読み込み中に表示するインジケータのインスタンス
-        activityIndicator = KRActivityIndicatorView(style: .color(.blue))
-//        activityIndicator?.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        activityIndicator = KRActivityIndicatorView(style: .color(.purple))
         activityIndicator?.frame = CGRect(x: self.view.bounds.width / 2 - 50, y: self.view.bounds.height / 2 - 50, width: 50, height: 50)
-//        activityIndicator?.center = view.center
         activityIndicator?.isLarge = true
         activityIndicator?.hidesWhenStopped = true
         view.addSubview(activityIndicator!)
@@ -80,7 +79,7 @@ class ChatViewController: JSQMessagesViewController {
         // 吹き出しの設定
         let bubbleFactory: JSQMessagesBubbleImageFactory? = JSQMessagesBubbleImageFactory()
         self.incomingBubble = bubbleFactory?.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
-        self.outgoingBubble = bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.jsq_messageBubbleBlue())
+        self.outgoingBubble = bubbleFactory?.outgoingMessagesBubbleImage(with: UIColor.purple)
         // アバターの設定
         self.incomingAvatar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage.swiftLogo, diameter: 64)
         self.outgoingAvarar = JSQMessagesAvatarImageFactory.avatarImage(with: UIImage.swiftLogo, diameter: 64)

@@ -16,6 +16,10 @@
 		9528994B2143A5A2009EA8B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952899492143A5A2009EA8B9 /* LaunchScreen.storyboard */; };
 		952899562143A5A2009EA8B9 /* chat_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952899552143A5A2009EA8B9 /* chat_appTests.swift */; };
 		952899612143A5A2009EA8B9 /* chat_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952899602143A5A2009EA8B9 /* chat_appUITests.swift */; };
+		9564ED3B21570784000A85CF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564ED3A21570784000A85CF /* SettingViewController.swift */; };
+		9564ED3D215718EE000A85CF /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564ED3C215718EE000A85CF /* NotificationViewController.swift */; };
+		9564ED3F21571BCB000A85CF /* AutoDeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564ED3E21571BCA000A85CF /* AutoDeleteViewController.swift */; };
+		9564ED4121571C21000A85CF /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564ED4021571C21000A85CF /* TutorialViewController.swift */; };
 		9569BF0D21527CA3004348EF /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569BF0C21527CA3004348EF /* RoomListViewController.swift */; };
 		9594C8022156809B0095B519 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9594C8012156809B0095B519 /* UIImage.swift */; };
 		9594C80421568BE50095B519 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9594C80321568BE50095B519 /* ChatMessage.swift */; };
@@ -60,6 +64,10 @@
 		9528995C2143A5A2009EA8B9 /* chat-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chat-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		952899602143A5A2009EA8B9 /* chat_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chat_appUITests.swift; sourceTree = "<group>"; };
 		952899622143A5A2009EA8B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9564ED3A21570784000A85CF /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9564ED3C215718EE000A85CF /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		9564ED3E21571BCA000A85CF /* AutoDeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoDeleteViewController.swift; sourceTree = "<group>"; };
+		9564ED4021571C21000A85CF /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		9569BF0C21527CA3004348EF /* RoomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewController.swift; sourceTree = "<group>"; };
 		9594C8012156809B0095B519 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9594C80321568BE50095B519 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
@@ -140,6 +148,10 @@
 				9594C80321568BE50095B519 /* ChatMessage.swift */,
 				952899422143A59F009EA8B9 /* ChatViewController.swift */,
 				9569BF0C21527CA3004348EF /* RoomListViewController.swift */,
+				9564ED3C215718EE000A85CF /* NotificationViewController.swift */,
+				9564ED3E21571BCA000A85CF /* AutoDeleteViewController.swift */,
+				9564ED3A21570784000A85CF /* SettingViewController.swift */,
+				9564ED4021571C21000A85CF /* TutorialViewController.swift */,
 				952899442143A59F009EA8B9 /* Main.storyboard */,
 				952899472143A5A2009EA8B9 /* Assets.xcassets */,
 				952899492143A5A2009EA8B9 /* LaunchScreen.storyboard */,
@@ -419,8 +431,12 @@
 				9569BF0D21527CA3004348EF /* RoomListViewController.swift in Sources */,
 				9594C8022156809B0095B519 /* UIImage.swift in Sources */,
 				952899432143A59F009EA8B9 /* ChatViewController.swift in Sources */,
+				9564ED4121571C21000A85CF /* TutorialViewController.swift in Sources */,
+				9564ED3D215718EE000A85CF /* NotificationViewController.swift in Sources */,
+				9564ED3F21571BCB000A85CF /* AutoDeleteViewController.swift in Sources */,
 				9594C80421568BE50095B519 /* ChatMessage.swift in Sources */,
 				952899412143A59F009EA8B9 /* AppDelegate.swift in Sources */,
+				9564ED3B21570784000A85CF /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

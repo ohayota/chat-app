@@ -11,42 +11,55 @@ import UIKit
 class RoomListViewController: UIViewController {
     var tableView: UITableView?
     var roomList: [[String]] = [
-        ["MIRAI BASE", "test"],
-        ["未来大4F"]
+        ["iPhone5", "test"],
+        ["MIRAI BASE", "未来大4F"]
     ]
     let roomStatus: [String] = ["参加中のルーム", "圏外のルーム"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "ルーム"
+        // ナビゲーションバーの背景色
+        self.navigationController?.navigationBar.barTintColor = .purple
+        // ナビゲーションバーアイテムの色
+        self.navigationController?.navigationBar.tintColor = .white
+        // ナビゲーションバーのテキストを変更
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationItem.title = "チャットルームリスト"
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            .foregroundColor: UIColor.white
+        ]
         // テーブルのインスタンス
         tableView = UITableView()
-        
-        if let tableView: UITableView = tableView {
-            // テーブルサイズを画面いっぱいに
-            tableView.frame = view.frame
-            // デリゲート
-            tableView.delegate = self
-            tableView.dataSource = self
-            // セルをテーブルに紐付ける
-            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-            // データのないセルを表示しないようにする
-            tableView.tableFooterView = UIView(frame: .zero)
-            // テーブルを表示
-            view.addSubview(tableView)
-        }
+        // テーブルサイズを画面いっぱいに
+        tableView?.frame = view.frame
+        // デリゲート
+        tableView?.delegate = self
+        tableView?.dataSource = self
+        // セルをテーブルに紐付ける
+        tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        // データのないセルを表示しないようにする
+        tableView?.tableFooterView = UIView(frame: .zero)
+        // テーブルを表示
+        view.addSubview(tableView!)
+    }
+    
+    @IBAction func tapSettingButton(_ sender: Any) {
+        let settingViewController: SettingViewController = SettingViewController()
+        self.navigationController?.pushViewController(settingViewController, animated: true)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     // MARK: - Navigation
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        if (segue.identifier == "toChatViewController") {
 //            let chatViewController:ChatViewController = (segue.destination as? ChatViewController)!
 //        }
 //    }
+    
 }
 
 // データ・ソース
@@ -72,7 +85,7 @@ extension RoomListViewController: UITableViewDataSource {
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.textLabel?.text = roomList[indexPath.section][indexPath.row]
         cell.accessoryType = .disclosureIndicator
-        //cell.accessoryView = UISwitch() // スィッチ
+//        cell.accessoryView = UISwitch() // スィッチ
         return cell
     }
 }

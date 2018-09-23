@@ -20,14 +20,86 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QfI-Ba-90c"/>
                     </view>
-                    <navigationItem key="navigationItem" id="h6Q-hu-8m8"/>
+                    <navigationItem key="navigationItem" id="h6Q-hu-8m8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="jwe-dK-Frb">
+                            <connections>
+                                <action selector="tapSettingButton:" destination="AYA-FV-dwC" id="0vf-qU-owH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toChatViewController" id="QTn-Wt-EDJ"/>
+                        <segue destination="cV0-go-GAE" kind="show" identifier="toSettingViewController" id="1RV-ya-iQe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zTh-Vi-JDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="340" y="133.5832083958021"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="eQy-4e-7yQ">
+            <objects>
+                <viewController id="cV0-go-GAE" customClass="SettingViewController" customModule="chat_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g8w-3h-nhW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="us4-t5-wrD"/>
+                    </view>
+                    <connections>
+                        <segue destination="qbC-RZ-a5i" kind="show" identifier="toNotificationViewController" id="u4z-NO-KEv"/>
+                        <segue destination="fAn-7L-GPP" kind="show" identifier="toAutoDeleteViewController" id="tpG-6L-c1X"/>
+                        <segue destination="x3C-yD-x3J" kind="show" identifier="toTutorialViewController" id="6Oh-15-b7n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vA3-we-gFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="933"/>
+        </scene>
+        <!--Notification View Controller-->
+        <scene sceneID="oCf-Ma-1hl">
+            <objects>
+                <viewController id="qbC-RZ-a5i" customClass="NotificationViewController" customModule="chat_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0vV-Cc-zf2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iZp-Df-1y3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxG-yS-MmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="932"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="Ngd-IC-vkJ">
+            <objects>
+                <viewController id="x3C-yD-x3J" customClass="TutorialViewController" customModule="chat_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7kz-z7-UaD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lYp-Kh-seU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5uc-1c-I3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="1728"/>
+        </scene>
+        <!--Auto Delete View Controller-->
+        <scene sceneID="aDG-xc-qMP">
+            <objects>
+                <viewController id="fAn-7L-GPP" customClass="AutoDeleteViewController" customModule="chat_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bf4-ah-NVF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="B2b-ir-bQg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wn7-K2-d3y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="1728"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="tne-QT-ifu">
