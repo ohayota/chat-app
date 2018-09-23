@@ -73,7 +73,7 @@ class ChatViewController: JSQMessagesViewController {
         // 新しいメッセージを受信するたび下にスクロールする
         automaticallyScrollsToMostRecentMessage = true
         // 自分のsenderIDを設定（ユーザ判定に必要なのでデバイスによって変更する）
-        self.senderId = "HIRYUGA"
+        self.senderId = "User1"
         // 表示するチャット画面が複数あるのでコメントアウト
 //        self.senderDisplayName = "test"
         // 吹き出しの設定

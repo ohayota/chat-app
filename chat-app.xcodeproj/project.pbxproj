@@ -20,6 +20,7 @@
 		9564ED3D215718EE000A85CF /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564ED3C215718EE000A85CF /* NotificationViewController.swift */; };
 		9564ED3F21571BCB000A85CF /* AutoDeleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564ED3E21571BCA000A85CF /* AutoDeleteViewController.swift */; };
 		9564ED4121571C21000A85CF /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564ED4021571C21000A85CF /* TutorialViewController.swift */; };
+		9564ED4821577F79000A85CF /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564ED4621577F79000A85CF /* UserInfoTableViewCell.swift */; };
 		9569BF0D21527CA3004348EF /* RoomListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569BF0C21527CA3004348EF /* RoomListViewController.swift */; };
 		9594C8022156809B0095B519 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9594C8012156809B0095B519 /* UIImage.swift */; };
 		9594C80421568BE50095B519 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9594C80321568BE50095B519 /* ChatMessage.swift */; };
@@ -68,6 +69,8 @@
 		9564ED3C215718EE000A85CF /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		9564ED3E21571BCA000A85CF /* AutoDeleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoDeleteViewController.swift; sourceTree = "<group>"; };
 		9564ED4021571C21000A85CF /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		9564ED4621577F79000A85CF /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfoTableViewCell.swift; path = "/Users/yota/Desktop/Swift/Swift演習用/chat-app/chat-app/UserInfoTableViewCell.swift"; sourceTree = "<absolute>"; };
+		9564ED4721577F79000A85CF /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = UserInfoTableViewCell.xib; path = "/Users/yota/Desktop/Swift/Swift演習用/chat-app/chat-app/UserInfoTableViewCell.xib"; sourceTree = "<absolute>"; };
 		9569BF0C21527CA3004348EF /* RoomListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListViewController.swift; sourceTree = "<group>"; };
 		9594C8012156809B0095B519 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		9594C80321568BE50095B519 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 		9528993F2143A59F009EA8B9 /* chat-app */ = {
 			isa = PBXGroup;
 			children = (
+				9564ED4621577F79000A85CF /* UserInfoTableViewCell.swift */,
+				9564ED4721577F79000A85CF /* UserInfoTableViewCell.xib */,
 				952899402143A59F009EA8B9 /* AppDelegate.swift */,
 				9594C8012156809B0095B519 /* UIImage.swift */,
 				9594C80321568BE50095B519 /* ChatMessage.swift */,
@@ -428,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9564ED4821577F79000A85CF /* UserInfoTableViewCell.swift in Sources */,
 				9569BF0D21527CA3004348EF /* RoomListViewController.swift in Sources */,
 				9594C8022156809B0095B519 /* UIImage.swift in Sources */,
 				952899432143A59F009EA8B9 /* ChatViewController.swift in Sources */,
