@@ -13,6 +13,7 @@ target 'chat-app' do
   pod 'SwiftLint'
   pod 'RealmSwift'
   pod 'KRActivityIndicatorView', '2.1.2'
+  pod 'MessageKit', '>= 1.0.0'
 
   target 'chat-appTests' do
     inherit! :search_paths

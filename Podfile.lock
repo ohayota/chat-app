@@ -51,6 +51,7 @@ PODS:
   - JSQSystemSoundPlayer (2.0.1)
   - KRActivityIndicatorView (2.1.2)
   - leveldb-library (1.20)
+  - MessageKit (1.0.0)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -68,6 +69,7 @@ DEPENDENCIES:
   - Firebase/Database
   - JSQMessagesViewController
   - KRActivityIndicatorView (= 2.1.2)
+  - MessageKit (>= 1.0.0)
   - RealmSwift
   - SwiftLint
 
@@ -84,6 +86,7 @@ SPEC REPOS:
     - JSQSystemSoundPlayer
     - KRActivityIndicatorView
     - leveldb-library
+    - MessageKit
     - nanopb
     - Realm
     - RealmSwift
@@ -101,11 +104,12 @@ SPEC CHECKSUMS:
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   KRActivityIndicatorView: 27e7a7e3da7fbc8e5405fbc4088b51cc2095a410
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  MessageKit: 16160036b16476b04bd0e9f2c7ce67e662e503e4
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Realm: 85ab9e4f779d66f6e9ffeb118dc25b7f130c96ac
   RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 05ccd62949ab1dc7fb5b857848cbd5fe7bae40bd
+PODFILE CHECKSUM: 887a1328fc2f1559db38a06b0487c497e3972e6e
 
 COCOAPODS: 1.5.3
