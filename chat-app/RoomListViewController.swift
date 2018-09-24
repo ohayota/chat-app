@@ -246,7 +246,7 @@ extension RoomListViewController: UITableViewDelegate {
         print(indexPath)
         let chatViewController: ChatViewController = ChatViewController()
         let displayName: String = roomList[indexPath.section][indexPath.row]
-        chatViewController.senderDisplayName = displayName
+        chatViewController.navigationController?.navigationItem.title = displayName
         self.navigationController?.pushViewController(chatViewController, animated: true)
     }
 }
